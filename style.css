@@ -1,0 +1,120 @@
+.main{
+	height:700px;
+	width:610px;
+	margin:0 auto;
+	background-color:grey;
+	background-size:cover;
+	box-shadow:5px 10px 10px grey;
+	border-radius:5px;
+}
+.wall{
+	height:200px;
+	background:transparent url("wallpaper.jpg") no-repeat;
+	background-size: cover;
+}
+.profile-info{
+	position:relative;
+	height:500px;
+	margin:0px;
+	width:100%;
+}
+.profile-pic
+{
+	position:absolute;
+	background:transparent url('profile.jpg') no-repeat;
+	background-size: cover;
+	height:150px;
+	width:150px;
+	border:5px solid black;
+	border-radius:50%;
+	box-shadow: 5px 5px 5px grey;
+	top:-78px;
+	left:225px;
+	z-index:10;
+}
+.profile-content
+{
+position:absolute;
+bottom:0px;
+height:420px;
+width:100%;
+background-color:grey;
+}
+
+.profile-content{
+
+   position:absolute;
+	margin:0px;
+	padding:0px;
+	bottom:0px;
+}
+.text
+{
+	position:absolute;
+	top:80px;
+	margin:0px;
+	padding:0px;
+	left:154px;
+	text-align: center;
+}
+
+.profile-link
+{
+	position:absolute;
+	bottom:0px;
+}
+.profile-link>ul>li{
+	list-style-type: none;
+	display:inline-block;
+	padding:0 35px 0 40px;
+	cursor:pointer;
+}
+a{
+	text-decoration:none;
+}
+.profile-link>ul>li:hover{
+	background-color:white;
+}
+
+.badge {
+	display: inline-block;
+	padding: 0.25em 0.4em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+  }
+  
+  .badge:empty {
+	display: none;
+  }
+  
+  .btn .badge {
+	position: relative;
+	top: -1px;
+  }
+  
+  .badge-pill {
+	padding-right: 0.6em;
+	padding-left: 0.6em;
+	border-radius: 5rem;
+  }
+  
+  .badge-primary {
+	color: #fff;
+	background-color: #00b445;
+  }
+  
+  .badge-primary[href]:hover, .badge-primary[href]:focus {
+	color: #fff;
+	text-decoration: none;
+	background-color: #0062cc;
+  }
+
+  a{
+	  padding:0px;
+	  margin:0px;
+
+  }

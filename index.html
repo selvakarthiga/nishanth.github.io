@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="main">
+        <div id="ret" class="wall">
+        </div>
+        <div class="profile-info">
+            <div class="profile-pic">
+            </div>
+            <div class="profile-content">
+                <div class="text" id="home">
+                    <h1>Selva Karthiga</h1>
+                    <h1>Full Stack Developer</h1>
+                </div>
+                <div id="Detail" style="margin-left:150px;display:none">
+                    <h3><b>NAME : </b>SELVA KARTHIGA</h3>
+                    <P><b>DATE OF BIRTH : </b>01.05.1999<br>
+                        <b>AGE : </b>21<br>
+                        <b>GENDER : </b>FEMALE<br>
+                        <b>FATHER'S NAME : </b>Mr. Murugan V<br>
+                        <b>MOTHER TONGUE : </b>Tamil<br>
+                        <b>KNOWN LANGUAGES : </b>TAMIL , ENGLISH</P>
+                    <p><b>CONTACT ADDRESS : </b>
+                    <address>
+                        4/284H1,Arumuga Nagar.<br>
+                        Velayuthapuram, Samusigapuram(PO),<br>
+                        Viruthunagar-600 102<br>
+                         +91 8072658453<br>
+                        E-Mail: selvakarthiga95@gmail.com
+                    </address>
+                </p>
+                </div>
+                <div id="Education" style="margin-left:100px;display:none">
+                    <p>
+                        <b>Graduation : </b><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course : B.E,Computer Science and Engineering<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College : Karpagam College of Engineering,Coimbatore<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board : Anna University<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year Of Completion : 2020<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CGPA(%) : 89<br>
+                        <b>Higher Secondary Education (HSC) : </b><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board : State Board<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;School : Government .Girls.Hr.Sec.School,Viruthunagar.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year Of Completion : 2016<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marks(%) : 85<br>
+                        <b>Secondary Level School Certificate (SSLC) : </b><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board : State Board<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;School : Government .Girls.Hr.Sec.School,Viruthunagar.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year Of Completion : 2014<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marks(%) : 95<br>
+                    </p>
+                </div>
+                <div id="Skills" style="margin-left:100px;width: 80%;display: none;">
+                    <br>
+                    <b>Language & Framework : </b><br><br>
+                    <span class="badge badge-pill badge-primary">C</span>
+                    <span class="badge badge-pill badge-primary">PYTHON</span>
+                    <span class="badge badge-pill badge-primary">HTML</span>
+                    <span class="badge badge-pill badge-primary">CSS</span>
+                    <span class="badge badge-pill badge-primary">BOOTSTRAP</span>
+                    <span class="badge badge-pill badge-primary">JAVASCRIPT</span>
+                    <span class="badge badge-pill badge-primary">JQUERY</span><br>
+                    <span class="badge badge-pill badge-primary">JAVA</span>
+                    <span class="badge badge-pill badge-primary">JSP</span>
+                    <span class="badge badge-pill badge-primary">SERVLET</span>
+                    <span class="badge badge-pill badge-primary">SPRING MVC</span>
+                    <span class="badge badge-pill badge-primary">HIBERNATE</span>
+                    <span class="badge badge-pill badge-primary">SPRINGBOOT</span>
+                    <span class="badge badge-pill badge-primary">NODE JS</span><br><br>
+                    <b>Projects : </b><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BLOOD BANK MANAGEMENT<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROCK-PAPER- SCISSORS GAME<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BALL BOUNCING GAME<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CROP INFORMATION MANAGEMENT WEBSITE<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3D IMAGE ROCKER<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SNOW FALLING EFFECT<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDEA IDENTIFICATION SYSTEM<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUBJECT RATE DETECTOR<br>
+                </div>
+                <div class="profile-link">
+                    <ul>
+                        <li onclick="change('Detail')">Detail<br><br>
+                            <img src="1.png">
+                        </li>
+                        <li onclick="change('Education')">Education<br><br>
+                            <img src="3.png"></li>
+                        <li onclick="change('Skills')">Skills<br><br>
+                            <img src="2.png"></li>
+                        <li onclick="change('home')"><a style="text-decoration: none;color: black;" href="./resume.pdf"
+                                target="_blank">Resume</a><br><br>
+                            <a href="./resume.pdf" target="_blank">
+                                <img src="4.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function change(idValue) {
+            if (idValue != "home") {
+                document.getElementById("home").style.display = "none";
+            }
+            if (idValue != "Detail") {
+                document.getElementById("Detail").style.display = "none";
+            }
+            if (idValue != "Education") {
+                document.getElementById("Education").style.display = "none";
+            }
+            if (idValue != "Skills") {
+                document.getElementById("Skills").style.display = "none";
+            }
+            var div = document.getElementById("" + idValue + "");
+            div.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
